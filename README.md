@@ -24,7 +24,7 @@ pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https
 
 Checkpoints and example data are available at [data link](https://drive.google.com/drive/folders/1UukU1JyGvZpOvjCq1umU_HyTLp1ZfUP0?usp=sharing). 
 
-For preparation, simply put the shared data folder and the checkpoint file under the root of this repo. The training data is splited along the width for faster loading.
+For data preparation, simply put the shared data folder and the checkpoint file under the root of this repo. The training data is splited along the width for faster loading.
 
 ## Instructions
 
