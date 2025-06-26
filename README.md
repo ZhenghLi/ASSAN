@@ -11,11 +11,16 @@ This repo contains the offical PyTroch code for **Sparse Reconstruction of Optic
 ## Preparation
 
 To bulid the environment：
-`conda env create -f environment.yaml`
+```
+conda env create -f environment.yaml
+```
 
 To avoid potential compatibility issue, you may reinstall pytorch and torchvision:
-`pip uninstall torch torchvision torchaudio`
-`pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118`
+
+```
+pip uninstall torch torchvision torchaudio
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118
+```
 
 Checkpoints and example data are available at [data link](https://drive.google.com/drive/folders/1UukU1JyGvZpOvjCq1umU_HyTLp1ZfUP0?usp=sharing). 
 
@@ -24,10 +29,15 @@ For preparation, simply put the shared data folder and the checkpoint file under
 ## Instructions
 
 For training on x2 sparsity:
-`OMP_NUM_THREADS=4 torchrun --nnodes=1 --nproc_per_node=4 odt_train.py --sp 2 --batch-size 2`
+```
+OMP_NUM_THREADS=4 torchrun --nnodes=1 --nproc_per_node=4 odt_train.py --sp 2 --batch-size 2
+```
 
 For testing on x2 sparsity:
-`python odt_test.py --sp 2`. 
+
+```
+python odt_test.py --sp 2
+```
 
 ## Acknowledgments
 
