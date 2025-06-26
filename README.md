@@ -1,5 +1,4 @@
-# SOAD
-
+# ASSAN
 This repo contains the offical PyTroch code for **Sparse Reconstruction of Optical Doppler Tomography with Alternative State Space Model and Attention** @ MICCAI 2025
 
 ## Overview
