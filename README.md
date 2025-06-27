@@ -14,7 +14,7 @@ To bulid the environment：
 conda env create -f environment.yaml
 ```
 
-To avoid potential compatibility issue, you may reinstall pytorch and torchvision:
+If you meet compatibility issues, you may need to reinstall pytorch and torchvision:
 
 ```
 pip uninstall torch torchvision torchaudio
